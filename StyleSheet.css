@@ -1,0 +1,14 @@
+﻿body {
+}
+.item-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item-group
+{
+    flex: 1;
+    margin-right: 10px;
+}
