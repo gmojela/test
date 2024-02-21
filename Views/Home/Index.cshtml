@@ -1,0 +1,88 @@
+﻿
+
+
+
+
+
+
+
+
+
+@model List<ItemInputModel>
+
+<div class="text-center">
+    <h1 class="display-4">Purchase Receipt</h1>
+
+    <form method="post" asp-action="GenerateReceipt">
+        <div>
+            <label for="items[0].Name">Item Name:</label>
+            <input type="text" class="form-control" id="items[0].Name" name="items[0].Name" />
+
+            <label for="items[0].Price">Price:</label>
+            <input type="number" step="0.01" class="form-control" id="items[0].Price" name="items[0].Price" />
+
+            <label for="items[0].IsImported">Is Imported:</label>
+            <select class="form-control" id="items[0].IsImported" name="items[0].IsImported">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="items[0].IsExempt">Is Exempt:</label>
+            <select class="form-control" id="items[0].IsExempt" name="items[0].IsExempt">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+        <div>
+            <label for="items[1].Name">Item Name:</label>
+            <input type="text" class="form-control" id="items[1].Name" name="items[1].Name" />
+            <label for="items[1].Price">Price:</label>
+            <input type="number" step="0.01" class="form-control" id="items[1].Price" name="items[1].Price" />
+            <label for="items[1].IsImported">Is Imported:</label>
+            <select class="form-control" id="items[1].IsImported" name="items[1].IsImported">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="items[1].IsExempt">Is Exempt:</label>
+            <select class="form-control" id="items[1].IsExempt" name="items[1].IsExempt">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="items[2].Name">Item Name:</label>
+            <input type="text" class="form-control" id="items[2].Name" name="items[2].Name" />
+            <label for="items[2].Price">Price:</label>
+            <input type="number" step="0.01" class="form-control" id="items[2].Price" name="items[2].Price" />
+            <label for="items[2].IsImported">Is Imported:</label>
+            <select class="form-control" id="items[2].IsImported" name="items[2].IsImported">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="items[2].IsExempt">Is Exempt:</label>
+            <select class="form-control" id="items[2].IsExempt" name="items[2].IsExempt">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+        <div>
+            <label for="items[3].Name">Item Name:</label>
+            <input type="text" class="form-control" id="items[3].Name" name="items[3].Name" />
+
+            <label for="items[3].Price">Price:</label>
+            <input type="number" step="0.01" class="form-control" id="items[3].Price" name="items[3].Price" />
+
+            <label for="items[3].IsImported">Is Imported:</label>
+            <select class="form-control" id="items[3].IsImported" name="items[3].IsImported">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="items[3].IsExempt">Is Exempt:</label>
+            <select class="form-control" id="items[3].IsExempt" name="items[3].IsExempt">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+            <button type="submit" class="btn btn-primary">Generate Receipt</button>
+    </form>
+</div>

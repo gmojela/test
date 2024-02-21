@@ -1,0 +1,35 @@
+﻿@model ReceiptViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Receipt</h1>
+
+    <h2>Items:</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Name</th>
+                <th>Price</th>                
+                <th>Tax</th>
+                <th>Import Duty</th>
+                <th>Item Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ReceiptItems)
+            {
+                <tr>
+                    <td>@item.Quantity</td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>                   
+                    <td>@item.Tax</td>
+                    <td>@item.ImportDuty</td>
+                    <td>@item.ItemCost</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h2>Total Tax: @Model.TotalTax</h2>
+    <h2>Total Cost: @Model.TotalCost</h2>
+</div>
